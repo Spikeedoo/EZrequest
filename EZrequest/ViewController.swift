@@ -18,7 +18,7 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    
         // Do any additional setup after loading the view.
     }
 
@@ -27,7 +27,6 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-    
     
     @IBAction func onTypeChange(_ sender: Any) {
         if (requestTypeSwitcher.selectedSegment == 0) {
@@ -117,6 +116,11 @@ class ViewController: NSViewController {
         }
         // Call request
         postTask.resume()
+    }
+    
+    
+    @IBAction func quitApp(_ sender: Any) {
+        exit(-1)
     }
     
 }
